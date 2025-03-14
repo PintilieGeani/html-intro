@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Il mio primo sito html">
+    <meta name="keywords" content="sito html introduzione">
+    <meta name="author" content="Pintilie Geani">
+    <title>HTML Intro</title>
+</head>
+
+<body>
+    <!--Prima lezione html-->
+
+    <h1>Hello Word</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque est sit assumenda sunt soluta! Autem ipsum odit
+        eligendi expedita numquam tenetur, magnam dolore deserunt maxime earum facere veritatis ut sunt?</p>
+    <!--
+    La prima cosa che vediamo è il DOCTYPE e il tag html che racchiude tutta la pagina
+    head: è la testa del nostro documento, elemento che non è visibile a schermo dove andiamo a mettere info aggiuntivi che servono al browser per interpretare il nostro documento (es: css)
+    meta: sono dati aggiuntivi che caratterizzano il nostro documento
+    Title: tag presente nel head ed è il titolo che poi risulterà sul tab del browser
+    Body: è il corpo del documento, dove verrà costruito
+    
+    Tag: Elemento del linguaggio html che da un significato semantico al nostro testo 
+        <tag>: delimita l'inizio della parte del testo
+        </tag>: delimita la fine della parte di testo
+        
+        Tag "h1,2,3,4,5,6": Sono i titoli dal più grande al piu piccolo-->
+
+    <h1>Titolo 1</h1>
+    <h2>Titolo 2</h2>
+    <h3>Titolo 3</h3>
+    <h4>Titolo 4</h4>
+    <h5>Titolo 5</h5>
+    <h6>Titolo 6</h6>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni distinctio repudiandae expedita est enim fugit,
+        consequuntur ab repellat nihil quo blanditiis necessitatibus commodi nulla doloremque dolores incidunt
+        repellendus mollitia eveniet.
+        Corporis aperiam corrupti officiis sapiente necessitatibus cupiditate ex possimus doloribus nemo, minima dolore
+        deleniti impedit consequuntur praesentium deserunt nihil recusandae provident odit! Quisquam, expedita dolorum!
+        <strong>Questo è una frase importante</strong>
+    </p>
+    <br>
+    <i>Testo in italico</i>
+    <br>
+    <em>Questo è un testo enfatizzato</em>
+
+    <!--h1 essendo il Titolo del nostro documento dovrebbe essere unico nella pagina perchè è alla base della richerca del motore di ricerca
+    -->
+    <!-- Questo è un commento -->
+    <!-- Control+k+c per commentare una linea -->
+    <!-- mentre control+k+u per togliere il commento -->
+
+    <!-- p: paragrafo, solitamente usiamo lorem come paragrafo di prova
+          OGNI VOLTA CHE USIAMO UN TAG DI BLOCCO OCCUPERà SEMPRE TUTTO LO SPAZIO A DISPOSIZIONE FINO IN FONDO ALLA PAGINA
+        Tag block: Occumapno tutto lo spazio e non permettono ad un'altro elemento di posizionarsi di fianco ma lo manda a capo
+        tag inline: sono tag che si posizionano sulla stessa linea e permettono agli altri elementi di posizionarsi al loro fianco.
+        Strong: il tag strong non rende solo il testo in grassetto ma dà anche un'importanza semantica perchè fa capire al browser che è un testo importante
+        b: rende solo grassetto quindi non ha importanza semantica ma solo estetica, ma non si usa più
+        i: rende il testo in italico ma non dà importanza semantica, se vogliamo enfatizzare un testo dobbiamo usare <em>
+        em: emfatizzata il testo, lo rende in italico e gli accorda un'importanza semantica-->
+
+    <!-- Button e anchor tag -->
+    <!-- anchor apre una nuova pagina in base all'indirizzo indicato nell'atributo href -->
+
+    <a href="https://www.w3schools.com">Questo e il link</a>
+
+    <!-- il bottone serve per eseguire un'azione in pagina oppure per inviare dati al server -->
+
+    <button>Sono un bottone, cliccami</button>
+
+    <!--Immagini-->
+
+    <img src="https://cdn.britannica.com/76/187976-050-7EF67E13/Floyd-Mayweather-Jr-ducks-Philippines-Manny-Pacquiao-May-2-2015.jpg"
+        alt="Boxing">
+
+    <img src="./img/graph.jpg" alt="Graph">
+
+    <!--img: è un self closure tag, che non ha bisogno del tag di chiusura
+        srl, alt, href, ecc sono attributi
+        gli attributi sono informazioni aggiuntive del tag
+        prendere immagini da internet comporta diversi "problemi" come la grandezza dell'immagine oppure la possibilità che l'immagine venga tolta o il link modificato, non possiamo neanche cambiare il formato
+        Percorso assoluto: fa riferimento ad un url in rete
+        Percorso relativo: fa riferimento ad un percorso in local, sulla stessa pagina o sul folder
+        quando usiamo un percorso relativo sul folder iniziare sempre con ./
+        alt: descrizione alternativa dell'immagine
+        img: tag inline
+        -->
+
+
+    <!-- Git in terminale
+     comandi:
+     "git add ." = per aggingere tutte le modifiche in stageing
+     "git commit -m "nome del commit" = per eseguire il commit
+     "git push" = per eseguire il push -->
+
+    <!-- Liste -->
+
+    <!-- Liste ordinate  -->
+    <ol>
+        <li>Primo</li>
+        <li>Secondo</li>
+        <li>Terzo</li>
+    </ol>
+
+    <!-- Liste non ordinate -->
+    <ul>
+        <li>Elemento</li>
+        <li>Elemento</li>
+        <li>Elemento</li>
+    </ul>
+
+    <!-- Figlio diretto di <ol> e <ul> è solamente <li>
+     ol= ordered list
+     ul= unordered list
+     li= list item. Dentro li noi possiamo mettere quello che vogliamo: immagini, paragrafi, ecc -->
+
+    <!-- Liste annidate -->
+    <ol>
+        <!-- Primo elemento -->
+        <li>
+            <h3>Classe 1</h3>
+            <p>Elenco studenti</p>
+            <ul>
+                <li>Giuseppe</li>
+                <li>Marco</li>
+                <li>Anna</li>
+            </ul>
+        </li>
+        <!-- Secondo elemento -->
+        <li>
+            <h3>Classe 2</h3>
+            <p>Elenco Studenti</p>
+            <ul>
+                <li>Giovanni</li>
+                <li>Fernando</li>
+                <li>Marco</li>
+            </ul>
+        </li>
+        <!-- Terzo elemento -->
+        <li>
+            <h3>Classe 3</h3>
+            <p>Elenco studenti</p>
+            <ul>
+                <li>Marco</li>
+                <li>Anna</li>
+                <li>Beppe</li>
+            </ul>
+        </li>
+    </ol>
+
+    <!--Tabelle-->
+
+    <Table>
+        <!-- Heading della tabella, intestazione delle colonne -->
+        <thead>
+            <!-- Riga -->
+            <tr>
+                <!-- Cella di intestazione -->
+                <th>Colonna 1</th>
+                <th>Colonna2</th>
+                <th>Colonna2</th>
+            </tr>
+        </thead>
+        <!-- Dati della tabella -->
+        <tbody>
+            <tr>
+                <!-- td è il table data, la cella con il dato -->
+                <td>1</td>
+                <td>Latte</td>
+                <td>&euro; 1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Yogurt Mirtillo</td>
+                <td>&euro; 2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Pane</td>
+                <td>&euro; 1</td>
+            </tr>
+        </tbody>
+        <!-- footer, conclusione della tabella, opzionale -->
+        <tfoot>
+            <tr>
+                <td>Somma</td>
+                <td></td>
+                <td>&euro; 4</td>
+            </tr>
+        </tfoot>
+    </Table>
+
+    <!--3 parti principali della tabella: thead, tbody, tfoot-->
+
+    <!-- Struttura base di ogni html -->
+
+    <!-- Header -->
+    <header>Logo, menu, ecc
+    </header>
+    <!-- Fine header -->
+
+    <!-- Main -->
+    <main>
+        <section>
+            Titolo, contenuto della pagina diviso nelle varie sezioni
+        </section>
+    </main>
+    <!-- Fine main -->
+
+    <!-- Footer -->
+    <footer>
+        <p>Made by Geani &hearts;</p>
+        <p>pagine utili,</p>
+        <p>ecc</p>
+    </footer>
+    <!-- Fine footer -->
+
+    <!-- NELLA SCELTA DEL TAG NON BISOGNA MAI FARSI GUIDARE DALLA PARTE GRAFICA MA SEMPRE DALLA PARTE SEMANTICA -->
+
+    <!-- <div></div> non ha significato semantico ma è un tag che serve ad organizzare. non è come section che è un "sezione" della pagina, con un titolo, ecc -->
+
+     <!-- Header e footer solitamente si ripetono per ogni pagina del sito -->
+
+     <!-- Approccio top-down cioè partire dalla visione più grande, macroblocchi, fino ai dettagli -->
+</body>
+
+</html>
