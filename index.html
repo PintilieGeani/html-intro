@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,13 @@
     <meta name="author" content="Pintilie Geani">
     <title>HTML Intro</title>
 </head>
+
 <body>
     <!--Prima lezione html-->
 
     <h1>Hello Word</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque est sit assumenda sunt soluta! Autem ipsum odit eligendi expedita numquam tenetur, magnam dolore deserunt maxime earum facere veritatis ut sunt?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque est sit assumenda sunt soluta! Autem ipsum odit
+        eligendi expedita numquam tenetur, magnam dolore deserunt maxime earum facere veritatis ut sunt?</p>
     <!--
     La prima cosa che vediamo è il DOCTYPE e il tag html che racchiude tutta la pagina
     head: è la testa del nostro documento, elemento che non è visibile a schermo dove andiamo a mettere info aggiuntivi che servono al browser per interpretare il nostro documento (es: css)
@@ -33,8 +36,12 @@
     <h5>Titolo 5</h5>
     <h6>Titolo 6</h6>
 
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni distinctio repudiandae expedita est enim fugit, consequuntur ab repellat nihil quo blanditiis necessitatibus commodi nulla doloremque dolores incidunt repellendus mollitia eveniet.
-    Corporis aperiam corrupti officiis sapiente necessitatibus cupiditate ex possimus doloribus nemo, minima dolore deleniti impedit consequuntur praesentium deserunt nihil recusandae provident odit! Quisquam, expedita dolorum! <strong>Questo è una frase importante</strong></p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni distinctio repudiandae expedita est enim fugit,
+        consequuntur ab repellat nihil quo blanditiis necessitatibus commodi nulla doloremque dolores incidunt
+        repellendus mollitia eveniet.
+        Corporis aperiam corrupti officiis sapiente necessitatibus cupiditate ex possimus doloribus nemo, minima dolore
+        deleniti impedit consequuntur praesentium deserunt nihil recusandae provident odit! Quisquam, expedita dolorum!
+        <strong>Questo è una frase importante</strong></p>
     <br>
     <i>Testo in italico</i>
     <br>
@@ -44,9 +51,9 @@
     -->
     <!-- Questo è un commento -->
     <!-- Control+k+c per commentare una linea -->
-     <!-- mentre control+k+u per togliere il commento -->
+    <!-- mentre control+k+u per togliere il commento -->
 
-     <!-- p: paragrafo, solitamente usiamo lorem come paragrafo di prova
+    <!-- p: paragrafo, solitamente usiamo lorem come paragrafo di prova
           OGNI VOLTA CHE USIAMO UN TAG DI BLOCCO OCCUPERà SEMPRE TUTTO LO SPAZIO A DISPOSIZIONE FINO IN FONDO ALLA PAGINA
         Tag block: Occumapno tutto lo spazio e non permettono ad un'altro elemento di posizionarsi di fianco ma lo manda a capo
         tag inline: sono tag che si posizionano sulla stessa linea e permettono agli altri elementi di posizionarsi al loro fianco.
@@ -55,14 +62,32 @@
         i: rende il testo in italico ma non dà importanza semantica, se vogliamo enfatizzare un testo dobbiamo usare <em>
         em: emfatizzata il testo, lo rende in italico e gli accorda un'importanza semantica-->
 
-        <!-- Button e anchor tag -->
-        <!-- anchor apre una nuova pagina in base all'indirizzo indicato nell'atributo href -->
-        
-         <a href="https://www.w3schools.com">Questo e il link</a>
+    <!-- Button e anchor tag -->
+    <!-- anchor apre una nuova pagina in base all'indirizzo indicato nell'atributo href -->
 
-          <!-- il bottone serve per eseguire un'azione in pagina oppure per inviare dati al server -->
-           
-         <button>Sono un bottone, cliccami</button>
-         
+    <a href="https://www.w3schools.com">Questo e il link</a>
+
+    <!-- il bottone serve per eseguire un'azione in pagina oppure per inviare dati al server -->
+
+    <button>Sono un bottone, cliccami</button>
+
+    <!--Immagini-->
+
+    <img src="https://cdn.britannica.com/76/187976-050-7EF67E13/Floyd-Mayweather-Jr-ducks-Philippines-Manny-Pacquiao-May-2-2015.jpg" alt="Boxing">
+
+    <img src="./img/graph.jpg" alt="Graph">
+
+    <!--img: è un self closure tag, che non ha bisogno del tag di chiusura
+        srl, alt, href, ecc sono attributi
+        gli attributi sono informazioni aggiuntive del tag
+        prendere immagini da internet comporta diversi "problemi" come la grandezza dell'immagine oppure la possibilità che l'immagine venga tolta o il link modificato, non possiamo neanche cambiare il formato
+        Percorso assoluto: fa riferimento ad un url in rete
+        Percorso relativo: fa riferimento ad un percorso in local, sulla stessa pagina o sul folder
+        quando usiamo un percorso relativo sul folder iniziare sempre con ./
+        alt: descrizione alternativa dell'immagine
+        img: tag inline
+        -->
+
 </body>
+
 </html>
